@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GamefyApplication {
+public class GamifyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GamefyApplication.class, args);
+		SpringApplication.run(GamifyApplication.class, args);
 	}
 
 }

@@ -24,7 +24,7 @@ import org.springframework.web.client.RestTemplate;
  * @author Sony
  */
 @RestController
-public class GamefyController {
+public class GamifyController {
     
     @Autowired
     private PlayerReportService reportService;
