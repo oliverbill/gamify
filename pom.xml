@@ -18,9 +18,9 @@
 	</parent>
         
 	<groupId>br.com.oliverapps</groupId>
-	<artifactId>gamefy</artifactId>
+	<artifactId>gamify</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>gamefy</name>
+	<name>gamify</name>
 
 	<properties>
 		<java.version>1.8</java.version>
