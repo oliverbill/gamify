@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gamefy;
+package br.com.oliverapps.gamify;
 
-import br.com.oliverapps.gamefy.model.Player;
-import br.com.oliverapps.gamefy.model.PlayerReport;
-import br.com.oliverapps.gamefy.model.GameTask;
-import br.com.oliverapps.gamefy.service.PlayerReportService;
-import br.com.oliverapps.gamefy.service.PlayerReportServiceImpl;
+import br.com.oliverapps.gamify.model.GameTask;
+import br.com.oliverapps.gamify.model.Player;
+import br.com.oliverapps.gamify.model.PlayerReport;
+import br.com.oliverapps.gamify.service.PlayerReportService;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

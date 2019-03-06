@@ -1,4 +1,4 @@
-package br.com.oliverapps.gameficationengine;
+package br.com.oliverapps.gamify;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class GameficationEngineApplicationTests {
+public class GamifyApplicationTests {
 
     @Test
     public void contextLoads() {

@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gamefy.model;
-
-import javax.persistence.Enumerated;
+package br.com.oliverapps.gamify.model;
 
 public enum TaskNameEnum {
     ISSUE_COMPLETE("to complete an issue with successful PRW in Dev Test Complete status",2),

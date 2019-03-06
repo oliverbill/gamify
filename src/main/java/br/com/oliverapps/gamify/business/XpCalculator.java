@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gamefy.business;
+package br.com.oliverapps.gamify.business;
 
-import br.com.oliverapps.gamefy.model.GameTask;
-import br.com.oliverapps.gamefy.model.TaskNameEnum;
+import br.com.oliverapps.gamify.model.GameTask;
+import br.com.oliverapps.gamify.model.TaskNameEnum;
 import com.atlassian.jira.rest.client.api.domain.Issue;
 import java.util.ArrayList;
 import java.util.List;

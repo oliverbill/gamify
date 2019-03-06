@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gameficationengine;
+package br.com.oliverapps.gamify;
 
-import br.com.oliverapps.gamefy.business.XpCalculator;
-import br.com.oliverapps.gamefy.model.Player;
-import br.com.oliverapps.gamefy.model.PlayerReport;
-import br.com.oliverapps.gamefy.model.GameTask;
-import br.com.oliverapps.gamefy.model.TaskNameEnum;
+import br.com.oliverapps.gamify.business.XpCalculator;
+import br.com.oliverapps.gamify.model.Player;
+import br.com.oliverapps.gamify.model.PlayerReport;
+import br.com.oliverapps.gamify.model.GameTask;
+import br.com.oliverapps.gamify.model.TaskNameEnum;
 import com.atlassian.jira.rest.client.api.domain.Issue;
 import com.atlassian.jira.rest.client.api.domain.TimeTracking;
 import java.util.ArrayList;

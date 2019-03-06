@@ -1,4 +1,4 @@
-package br.com.oliverapps.gamefy;
+package br.com.oliverapps.gamify;
 
 import com.atlassian.jira.rest.client.api.JiraRestClient;
 import com.atlassian.jira.rest.client.internal.async.AsynchronousJiraRestClientFactory;

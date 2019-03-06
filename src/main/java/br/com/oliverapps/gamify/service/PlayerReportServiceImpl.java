@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gamefy.service;
+package br.com.oliverapps.gamify.service;
 
-import br.com.oliverapps.gamefy.business.XpCalculator;
-import br.com.oliverapps.gamefy.model.Player;
-import br.com.oliverapps.gamefy.model.PlayerReport;
-import br.com.oliverapps.gamefy.model.GameTask;
-import br.com.oliverapps.gamefy.repository.PlayerRepository;
-import br.com.oliverapps.gamefy.repository.ReportRepository;
-import br.com.oliverapps.gamefy.repository.TaskRepository;
+import br.com.oliverapps.gamify.business.XpCalculator;
+import br.com.oliverapps.gamify.model.Player;
+import br.com.oliverapps.gamify.model.PlayerReport;
+import br.com.oliverapps.gamify.model.GameTask;
+import br.com.oliverapps.gamify.repository.PlayerRepository;
+import br.com.oliverapps.gamify.repository.ReportRepository;
+import br.com.oliverapps.gamify.repository.TaskRepository;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
 import com.atlassian.jira.rest.client.api.domain.Issue;
 import com.atlassian.jira.rest.client.api.domain.SearchResult;

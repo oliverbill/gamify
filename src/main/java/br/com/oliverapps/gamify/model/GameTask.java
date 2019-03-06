@@ -3,13 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gamefy.model;
+package br.com.oliverapps.gamify.model;
 
-import br.com.oliverapps.gamefy.model.converter.LocalDateAttributeConverter;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Objects;
-import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

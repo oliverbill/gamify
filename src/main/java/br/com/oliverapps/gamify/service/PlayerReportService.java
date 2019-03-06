@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.oliverapps.gamefy.service;
+package br.com.oliverapps.gamify.service;
 
-import br.com.oliverapps.gamefy.model.Player;
-import br.com.oliverapps.gamefy.model.PlayerReport;
-import br.com.oliverapps.gamefy.model.GameTask;
+import br.com.oliverapps.gamify.model.Player;
+import br.com.oliverapps.gamify.model.PlayerReport;
+import br.com.oliverapps.gamify.model.GameTask;
 import java.util.List;
 
 
