@@ -10,6 +10,7 @@ import br.com.oliverapps.gamify.model.Player;
 import br.com.oliverapps.gamify.model.PlayerReport;
 import br.com.oliverapps.gamify.service.PlayerReportService;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,25 +35,25 @@ public class GamifyController {
     @Autowired
     JiraRestClient JIRAClient;
        
-    @RequestMapping("/players")
+    @RequestMapping(value = "/players")
     public List<Player> players() {
         List<Player> players = reportService.allPlayers();
         return players;
     }
     
-    @RequestMapping("/tasks")
+    @RequestMapping(value = "/tasks")
     public List<GameTask> tasks() {
         List<GameTask> tasks = reportService.allTasks();
         return tasks;
     }
     
-    @RequestMapping("/tasks")
+    @RequestMapping(value = "/reports")
     public List<PlayerReport> allPlayersReport() {
         List<PlayerReport> reports = reportService.allReports();
         return reports;
     }
                 
-    @GetMapping("/events/check/{nickName}/{taskName}/{sprints}")
+    @GetMapping(value = "/events/check/{nickName}/{taskName}/{sprints}")
     public PlayerReport getPlayerReport(@RequestParam(value="nickName") String nickName,
             @RequestParam(value="taskName") String taskName, @RequestParam(value="sprints") String sprints)
     {

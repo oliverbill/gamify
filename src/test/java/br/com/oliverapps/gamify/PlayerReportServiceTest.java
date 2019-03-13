@@ -18,6 +18,7 @@ import static org.hamcrest.collection.IsIn.isIn;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -26,6 +27,7 @@ import static org.mockito.Mockito.when;
 import org.mockito.MockitoAnnotations;
 
 @RunWith(JUnit4.class)
+@Ignore
 public class PlayerReportServiceTest {
     
     private List mockListIssues;            

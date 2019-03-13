@@ -6,6 +6,7 @@
 package br.com.oliverapps.gamify.service;
 
 import br.com.oliverapps.gamify.business.XpCalculator;
+import br.com.oliverapps.gamify.integration.jira.JiraConfiguration;
 import br.com.oliverapps.gamify.model.Player;
 import br.com.oliverapps.gamify.model.PlayerReport;
 import br.com.oliverapps.gamify.model.GameTask;
@@ -22,7 +23,13 @@ import java.util.NoSuchElementException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
+@Service
 public class PlayerReportServiceImpl implements PlayerReportService{
     
     @Autowired
@@ -36,12 +43,17 @@ public class PlayerReportServiceImpl implements PlayerReportService{
     @Autowired
     private XpCalculator calc;
     
+    @Autowired
+    private JiraRestClient jiraClient;
+    
+    private final String GET_ISSUES_URI_BASE = "http://localhost:8080/rest/api/2/search?jql=";
+    
     private final Logger LOGGER = LoggerFactory.getLogger(getClass().getSimpleName());
         
     public PlayerReportServiceImpl(JiraRestClient c,ReportRepository reportRepo,
             PlayerRepository pRepo,TaskRepository tRepo)
     {
-        this.JIRAClient = c;
+        this.jiraClient = c;
         this.reportRepo = reportRepo;
         this.playerRepo = pRepo;
         this.taskRepo = tRepo;
@@ -99,4 +111,24 @@ public class PlayerReportServiceImpl implements PlayerReportService{
         List<GameTask> tasks = calc.calculateIssueCompleteTasks(issues);
         return tasks;
     }
+    
+//    public List<GameTask> generateIssueCompleteTasks(String nickName,String sprints){
+//        RestTemplate restClient = new RestTemplate();
+//        
+//        String prwJQL = String.format("assignee=1$ and status in (2$) and sprint in($3)", 
+//                nickName,"Dev Test Complete",sprints);
+//        
+//        final String GET_ISSUES_URI = GET_ISSUES_URI_BASE + prwJQL;        
+//        
+//        ResponseEntity<String> jsonResp = restClient.getForEntity(GET_ISSUES_URI, String.class);
+//        
+//        //Iterable<Issue> issues = searchJqlPromise.claim().getIssues();
+//        
+////        ObjectMapper mapper = new ObjectMapper();
+////        JsonNode root = mapper.readTree(response.getBody());
+////        JsonNode name = root.path("name");
+//                        
+//        List<GameTask> tasks = calc.calculateIssueCompleteTasks(issues);
+//        return tasks;
+//    }    
 }
